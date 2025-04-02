@@ -1,0 +1,84 @@
+/* Estiliza a estrutura principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+/* Estiliza o card de login */
+.login-card {
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-card label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-card button:hover {
+    background: #e68900;
+}
+
+/* Link para cadastro */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a imagem ao lado */
+.login-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
