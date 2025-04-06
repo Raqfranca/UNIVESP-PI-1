@@ -11,8 +11,13 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: hsla(0, 0%, 72%, 0.773);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000; 
 }
   
 .navbar ul {
@@ -41,17 +46,148 @@ body {
   
 .navbar a:hover {
     text-decoration: underline;
+    color: #6A141F;
 }
-  
+
+.botao-login{
+    background-color: #D88F28; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.botao-login:hover {
+    background-color: #C77A1E; 
+}
+
 
 /* Seção de Apresentação */
 .hero {
-    background: #ffcc66;
+    background-image: url("../images/Rectangle 24.png");
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;
     text-align: center;
-    padding: 50px 20px;
+    font-size: 30px;
+    color: white;
+    padding: 300px 20px;
 }
 
-/* Destaque de Animais */
+/*sesão 1 */
+.Adote {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0px; 
+    margin-bottom: 120px;
+    background-color: #ffffff; 
+}
+
+.texto-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+h2 {
+    font-size: 32px; 
+    margin: 0;
+}
+
+.adote-text {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.botao-adote {
+    background-color: #D88F28; 
+    color: #fff; 
+    border: none; 
+    padding: 15px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    margin-top: 20px; 
+    border-radius: 5px; 
+}
+
+.botao-adote:hover {
+    background-color: #e6b800; 
+}
+
+.animais-container {
+    flex-shrink: 0; 
+}
+
+.animais-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+/* Sessão 2 */
+.para-adocao {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0px; 
+    background-color: #F1CD9A; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 120px;
+}
+
+.animais-container-2 {
+    flex-shrink: 0; 
+}
+
+.animais-container-2 img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.texto-container-2 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+h2 {
+    font-size: 32px; 
+    margin: 0; 
+}
+
+.adocao-text {
+    font-size: 24px; 
+    margin: 10px 0; 
+}
+
+.botao-cadatre-seu-pet {
+    background-color: #6A141F;
+    color: #fff; 
+    border: none; 
+    padding: 15px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    margin-top: 20px; 
+    border-radius: 5px; 
+}
+
+.botao-cadatre-seu-pet:hover {
+    background-color: #921a2aa4; 
+}
+
+/* Destaque de Animais 
 .destaque-animais {
     text-align: center;
     padding: 30px;
