@@ -1,18 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000; 
+}
+  
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+  
+.navbar ul:first-child {
+    margin-right: auto;
+}
+  
+.navbar ul:last-child {
+    margin-left: auto;
+}
+  
+.navbar li {
+    margin: 0 15px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 16px;
+}
+  
+.navbar a:hover {
+    text-decoration: underline;
+    color: #6A141F;
+}
+
+.botao-login{
+    background-color: #D88F28; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.botao-login:hover {
+    background-color: #C77A1E; 
+}
+
 /* Estiliza a estrutura principal */
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 80vh;
-    padding: 20px;
+    height: 100vh;
 }
 
 /* Estiliza o card de login */
 .login-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 350px;
     padding: 30px;
     background: #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
 }
@@ -40,7 +106,7 @@
 .login-card button {
     width: 100%;
     padding: 10px;
-    background: #ff9800;
+    background: #6A141F;
     color: white;
     font-weight: bold;
     border: none;
@@ -50,7 +116,7 @@
 }
 
 .login-card button:hover {
-    background: #e68900;
+    background: #4D0F17;
 }
 
 /* Link para cadastro */
@@ -60,7 +126,7 @@
 }
 
 .register-text a {
-    color: #ff9800;
+    color: #6A141F;
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,11 +140,13 @@
     flex: 1;
     max-width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;   
+    align-items: flex-end;       
 }
-
+  
 .login-image img {
-    max-width: 100%;
+    width: 100%;              
+    max-width: 500px;        
     height: auto;
-    border-radius: 10px;
-}
+    object-fit: contain;     
+}  
