@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
+  const loadingOverlay = document.getElementById('loading-overlay');
 
   form.addEventListener('submit', async (event) => {
-    event.preventDefault(); // evita recarregar a página
+    event.preventDefault();
+
+    loadingOverlay.style.display = 'flex'; 
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -19,17 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await response.json();
 
       if (response.ok) {
-        alert('Login realizado com sucesso!');
-        console.log('Resposta da API:', data);
-        // Redirecionar ou salvar token
-        // localStorage.setItem('token', data.token);
-        // window.location.href = 'dashboard.html';
+        localStorage.setItem('userId', data.userId); 
+        localStorage.setItem('isLoggedIn', 'true');  
+        window.location.href = 'meus-pets.html';
       } else {
-        alert(data.message || 'Falha no login.');
+        alert('Email ou senha inválidos.');
       }
     } catch (error) {
-      console.error('Erro ao fazer login:', error);
+      console.error('Erro ao tentar login:', error);
       alert('Erro de conexão com o servidor.');
+    } finally {
+      loadingOverlay.style.display = 'none'; 
     }
   });
 });
+
