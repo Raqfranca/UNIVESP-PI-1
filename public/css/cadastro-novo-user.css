@@ -1,0 +1,152 @@
+body {
+    font-family: 'Inter', sans-serif;   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000; 
+}
+  
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+  
+.navbar ul:first-child {
+    margin-right: auto;
+}
+  
+.navbar ul:last-child {
+    margin-left: auto;
+}
+  
+.navbar li {
+    margin: 0 15px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 16px;
+}
+  
+.navbar a:hover {
+    text-decoration: underline;
+    color: #6A141F;
+}
+
+.botao-login{
+    background-color: #D88F28; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.botao-login:hover {
+    background-color: #C77A1E; 
+}
+
+/* Estiliza a estrutura principal */
+.container {
+    display: flex;
+    height: 80vh;
+    height: 100vh;
+}
+
+/* Estiliza o card de cadastro */
+.cadastro-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cadastro-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cadastro-card label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cadastro-card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cadastro-card button {
+    width: 100%;
+    padding: 10px;
+    background: #6A141F;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cadastro-card button:hover {
+    background: #4D0F17;
+}
+
+/* Link para cadastro */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #6A141F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a imagem ao lado */
+.cadastro-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;   
+    align-items: flex-end;       
+}
+  
+.cadastro-image img {
+    width: 100%;              
+    max-width: 500px;        
+    height: auto;
+    object-fit: contain;     
+}  

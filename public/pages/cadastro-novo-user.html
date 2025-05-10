@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/cadastro-novo-user.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <div class="container">
+        <div class="cadastro-card">
+            <h2>CADASTRO</h2>
+            <form action="#" method="POST">
+
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirmar a senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <button>Criar</button>
+            </form>
+            <p class="register-text">Já possui cadastro? <a href="login.html">Entrar</a></p>
+        </div>
+
+        <div class="cadastro-image">
+            <img src="../images/happy-dog-cat.png" alt="Imagem de login">
+        </div>
+    </div>
+
+    <script src="../components/navbar.js"></script>
+    <script src="../js/cadastro-novo-user.js"></script>
+</body>
+</html>
