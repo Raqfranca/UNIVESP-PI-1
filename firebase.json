@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "pi-01-fdbc2",
     "public": "public",
     "ignore": [
       "firebase.json",
