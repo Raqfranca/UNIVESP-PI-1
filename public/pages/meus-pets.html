@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="../css/meus-pets.css">
 </head>
 <body>
-
-    <!-- Navbar será carregada aqui -->
     <div id="navbar-container"></div>
-
-    <!-- Loading -->
+  
     <div id="loading-overlay" style="display: none;">
-        <div class="spinner"></div>
+      <div class="spinner"></div>
     </div>
-
+    
     <div class="container">
-    </div>    
-        
+      <table id="animal-table">
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Espécie</th>
+            <th>Descrição</th>
+            <th>Adotado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  
     <script src="../components/navbar.js"></script>
     <script src="../js/meus-pets.js"></script>
-</body>
+  </body>
+  
 </html>

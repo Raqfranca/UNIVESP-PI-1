@@ -212,54 +212,6 @@ h2 {
     border-radius: 8px;
 }
 
-sobre */
-
-.sobre {
-    display: flex;
-    align-items: center; 
-    padding: 20px; 
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-}
-
-.sobre-texto {
-    flex: 1; 
-    margin-right: 20px; 
-}
-
-.sobre {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    align-items: center; 
-    padding: 20px; 
-}
-
-.sobre-texto {
-    padding-right: 20px; 
-}
-
-.sobre-text {
-    font-size: 32px; 
-    padding-left: 80px;
-    padding-bottom: 80px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-}
-
-.sobre-container {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-}
-
-.sobre-container img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
-}
-
 /* Rodapé */
 footer {
     background: #333;
